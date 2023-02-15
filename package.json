@@ -4,8 +4,8 @@
   "description": "Node.js + Express API for classifying images",
   "main": "app.js",
   "scripts": {
-    "start": "node server.js",
-    "start-production": "NODE_ENV=production pm2 start server.js --name nsfw-detector-api",
+    "start": "npm rebuild @tensorflow/tfjs-node --build-from-source && node server.js",
+    "start-production": "npm rebuild @tensorflow/tfjs-node --build-from-source && NODE_ENV=production pm2 start server.js --name nsfw-detector-api",
     "test": "NODE_ENV=test jest --coverage --ci",
     "testDev": "NODE_ENV=test jest --watch"
   },

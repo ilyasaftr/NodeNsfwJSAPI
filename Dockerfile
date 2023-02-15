@@ -1,4 +1,5 @@
-FROM node:16-bullseye-slim
+FROM node:lts
+RUN apt-get update -y && apt-get install -y g++ make python3
 
 WORKDIR /usr/src/app
 COPY package*.json ./
