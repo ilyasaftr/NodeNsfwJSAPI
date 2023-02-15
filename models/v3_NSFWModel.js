@@ -10,10 +10,10 @@ if (isLinux) {
     haveAVX = cpuInfo.includes("avx");
 }
 
-if (!haveAVX) {
-    //console.error(cpuInfo);
-    console.error("WARNING!!!!!!!! AVX instruction set not detected");
-}
+// if (!haveAVX) {
+//     //console.error(cpuInfo);
+//     console.error("WARNING!!!!!!!! AVX instruction set not detected");
+// }
 
 const axios = require("axios")
 const Path = require("path");
