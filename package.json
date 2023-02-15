@@ -1,6 +1,6 @@
 {
   "name": "node-nsfw-detector-api",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Node.js + Express API for classifying images",
   "main": "app.js",
   "scripts": {
